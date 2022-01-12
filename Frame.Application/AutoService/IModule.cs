@@ -1,4 +1,5 @@
-﻿namespace Frame.Core
+﻿
+namespace Frame.Core
 {
     /// <summary>
     /// 基础自动注入模块
@@ -6,5 +7,6 @@
     /// </summary>
     public interface IModule
     {
+        
     }
 }

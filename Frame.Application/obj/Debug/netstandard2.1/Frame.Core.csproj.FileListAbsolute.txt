@@ -7,3 +7,4 @@ D:\项目\Frames\Frame.Application\obj\Debug\netstandard2.1\Frame.Core.AssemblyI
 D:\项目\Frames\Frame.Application\obj\Debug\netstandard2.1\Frame.Core.csproj.CoreCompileInputs.cache
 D:\项目\Frames\Frame.Application\obj\Debug\netstandard2.1\Frame.Core.dll
 D:\项目\Frames\Frame.Application\obj\Debug\netstandard2.1\Frame.Core.pdb
+D:\项目\Frames\Frame.Application\obj\Debug\netstandard2.1\Frame.Core.csproj.AssemblyReference.cache
