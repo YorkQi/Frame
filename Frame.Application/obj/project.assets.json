@@ -15,9 +15,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\项目\\Frames\\Frame.Application\\Frame.Application.csproj",
-      "projectName": "Frame.Application",
-      "projectPath": "D:\\项目\\Frames\\Frame.Application\\Frame.Application.csproj",
+      "projectUniqueName": "D:\\项目\\Frames\\Frame.Application\\Frame.Core.csproj",
+      "projectName": "Frame.Core",
+      "projectPath": "D:\\项目\\Frames\\Frame.Application\\Frame.Core.csproj",
       "packagesPath": "C:\\Users\\BWF\\.nuget\\packages\\",
       "outputPath": "D:\\项目\\Frames\\Frame.Application\\obj\\",
       "projectStyle": "PackageReference",

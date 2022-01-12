@@ -1,3 +1,4 @@
+using Application;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Tests.Controllers
@@ -8,19 +9,26 @@ namespace Tests.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
+            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+        };
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        private readonly test1 _test;
+        private readonly Test _test1;
+        public WeatherForecastController(ILogger<WeatherForecastController> logger,test1 test, Test test1)
         {
             _logger = logger;
+            _test = test;
+            _test1 = test1;
         }
 
-        [HttpGet(Name = "GetWeatherForecast")]
+        [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            var s = _test.Name;
+            var ss = _test1.Name;
+            
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),

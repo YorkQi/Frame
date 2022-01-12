@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J0s8tByDsvdKO1mwPc/JUUo6eWWtTt+KJTYXWmhYxBHo4XlXJ1wnfj0W3Q8kA79jgxkxvJ9gp2xeNV5zunERbg==",
+  "dgSpecHash": "yySsf7w5Wk8vHgX86/vDYAbNurNSnUoR/Uhq48TNNNMYvdPrTO+qGlGPzuZtjRIhduK/gtREy8pmxLCnaTKP7w==",
   "success": true,
-  "projectFilePath": "D:\\项目\\Frames\\Frame.Domain\\Frame.Domain.csproj",
+  "projectFilePath": "D:\\项目\\Frames\\Frame.Domain\\Frame.BackJob.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,0 +1,13 @@
+D:\项目\Frames\DomainModel\bin\Debug\netstandard2.1\DomainModel.deps.json
+D:\项目\Frames\DomainModel\bin\Debug\netstandard2.1\DomainModel.dll
+D:\项目\Frames\DomainModel\bin\Debug\netstandard2.1\DomainModel.pdb
+D:\项目\Frames\DomainModel\bin\Debug\netstandard2.1\Frame.Core.dll
+D:\项目\Frames\DomainModel\bin\Debug\netstandard2.1\Frame.Core.pdb
+D:\项目\Frames\DomainModel\obj\Debug\netstandard2.1\DomainModel.csproj.AssemblyReference.cache
+D:\项目\Frames\DomainModel\obj\Debug\netstandard2.1\DomainModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\项目\Frames\DomainModel\obj\Debug\netstandard2.1\DomainModel.AssemblyInfoInputs.cache
+D:\项目\Frames\DomainModel\obj\Debug\netstandard2.1\DomainModel.AssemblyInfo.cs
+D:\项目\Frames\DomainModel\obj\Debug\netstandard2.1\DomainModel.csproj.CoreCompileInputs.cache
+D:\项目\Frames\DomainModel\obj\Debug\netstandard2.1\DomainModel.csproj.CopyComplete
+D:\项目\Frames\DomainModel\obj\Debug\netstandard2.1\DomainModel.dll
+D:\项目\Frames\DomainModel\obj\Debug\netstandard2.1\DomainModel.pdb

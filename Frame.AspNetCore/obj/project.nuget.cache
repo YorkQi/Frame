@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "FluTl1fS0AjAksgjJOjx/XswmHEMj3TPLNaWDlvXRT3pjvYHT73XPjXO7T+lWpZ5j1z5R4ueU5g4fZiY0PdDTg==",
+  "success": true,
+  "projectFilePath": "D:\\项目\\Frames\\Frame.AspNetCore\\Frame.AspNetCore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\BWF\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

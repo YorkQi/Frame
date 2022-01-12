@@ -13,14 +13,54 @@
     },
     "3932e6e7-674d-43aa-baa8-d3a79381f9bb": {
       "ProjectGuid": "3932e6e7-674d-43aa-baa8-d3a79381f9bb",
-      "DisplayName": "Frame.Domain",
+      "DisplayName": "Frame.BackJob",
       "ColorIndex": 2
     },
     "0b6b204f-5388-425c-aa48-ef628c86737e": {
       "ProjectGuid": "0b6b204f-5388-425c-aa48-ef628c86737e",
-      "DisplayName": "Frame.Application",
+      "DisplayName": "Frame.Core",
       "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "杂项文件",
+      "ColorIndex": -1
+    },
+    "d4999215-7b37-41fb-bdaa-e974ed954a8d": {
+      "ProjectGuid": "d4999215-7b37-41fb-bdaa-e974ed954a8d",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 4
+    },
+    "f17da778-2611-4ad5-a929-f79e74957319": {
+      "ProjectGuid": "f17da778-2611-4ad5-a929-f79e74957319",
+      "DisplayName": "Frame.AspNetCore",
+      "ColorIndex": 5
+    },
+    "cf1334e2-8c18-4a18-ac26-435fc338847a": {
+      "ProjectGuid": "cf1334e2-8c18-4a18-ac26-435fc338847a",
+      "DisplayName": "Frame.AspNetCore",
+      "ColorIndex": 6
+    },
+    "368a3f99-91e6-47cf-bbb9-b2df175ec92e": {
+      "ProjectGuid": "368a3f99-91e6-47cf-bbb9-b2df175ec92e",
+      "DisplayName": "Frame.AspNetCore",
+      "ColorIndex": 7
+    },
+    "e0aa5d18-761d-40c7-9202-69e8d11e8e1e": {
+      "ProjectGuid": "e0aa5d18-761d-40c7-9202-69e8d11e8e1e",
+      "DisplayName": "Frame.AspNetCore",
+      "ColorIndex": 8
+    },
+    "775cb9b1-5092-4835-b295-3b2c2a5ed1aa": {
+      "ProjectGuid": "775cb9b1-5092-4835-b295-3b2c2a5ed1aa",
+      "DisplayName": "Frame.AspNetCore",
+      "ColorIndex": 9
+    },
+    "f73a2114-4b15-458f-abd0-4bbd4a35a42e": {
+      "ProjectGuid": "f73a2114-4b15-458f-abd0-4bbd4a35a42e",
+      "DisplayName": "DomainModel",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 11
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "omfaOBcd2KkWFKr0f0fbbJ+OhoNcXYMmgpVR961WA4G9VScGoSoBuWstqij5z7kKRohUQhaNwMNS2RZxHuGkgA==",
+  "dgSpecHash": "5LyyvIhq23Efe8QfBqJ5eoJbMXPMJWX/F+QFEG0tmYwisQ2/sSeqMgNoFsVdt2/SYMZQfVKz+Kf2VV/EVyflkA==",
   "success": true,
-  "projectFilePath": "D:\\项目\\Frames\\Frame.Application\\Frame.Application.csproj",
+  "projectFilePath": "D:\\项目\\Frames\\Frame.Application\\Frame.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

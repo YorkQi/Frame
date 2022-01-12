@@ -1,0 +1,15 @@
+D:\项目\Frames\Frame.AspNetCore\obj\Debug\net6.0\Frame.AspNetCore.csproj.AssemblyReference.cache
+D:\项目\Frames\Frame.AspNetCore\obj\Debug\net6.0\Frame.AspNetCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\项目\Frames\Frame.AspNetCore\obj\Debug\net6.0\Frame.AspNetCore.AssemblyInfoInputs.cache
+D:\项目\Frames\Frame.AspNetCore\obj\Debug\net6.0\Frame.AspNetCore.AssemblyInfo.cs
+D:\项目\Frames\Frame.AspNetCore\obj\Debug\net6.0\Frame.AspNetCore.csproj.CoreCompileInputs.cache
+D:\项目\Frames\Frame.AspNetCore\bin\Debug\net6.0\Frame.AspNetCore.deps.json
+D:\项目\Frames\Frame.AspNetCore\bin\Debug\net6.0\Frame.AspNetCore.dll
+D:\项目\Frames\Frame.AspNetCore\bin\Debug\net6.0\ref\Frame.AspNetCore.dll
+D:\项目\Frames\Frame.AspNetCore\bin\Debug\net6.0\Frame.AspNetCore.pdb
+D:\项目\Frames\Frame.AspNetCore\bin\Debug\net6.0\Frame.Core.dll
+D:\项目\Frames\Frame.AspNetCore\bin\Debug\net6.0\Frame.Core.pdb
+D:\项目\Frames\Frame.AspNetCore\obj\Debug\net6.0\Frame.AspNetCore.csproj.CopyComplete
+D:\项目\Frames\Frame.AspNetCore\obj\Debug\net6.0\Frame.AspNetCore.dll
+D:\项目\Frames\Frame.AspNetCore\obj\Debug\net6.0\ref\Frame.AspNetCore.dll
+D:\项目\Frames\Frame.AspNetCore\obj\Debug\net6.0\Frame.AspNetCore.pdb

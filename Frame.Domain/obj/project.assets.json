@@ -15,9 +15,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\项目\\Frames\\Frame.Domain\\Frame.Domain.csproj",
-      "projectName": "Frame.Domain",
-      "projectPath": "D:\\项目\\Frames\\Frame.Domain\\Frame.Domain.csproj",
+      "projectUniqueName": "D:\\项目\\Frames\\Frame.Domain\\Frame.BackJob.csproj",
+      "projectName": "Frame.BackJob",
+      "projectPath": "D:\\项目\\Frames\\Frame.Domain\\Frame.BackJob.csproj",
       "packagesPath": "C:\\Users\\BWF\\.nuget\\packages\\",
       "outputPath": "D:\\项目\\Frames\\Frame.Domain\\obj\\",
       "projectStyle": "PackageReference",
