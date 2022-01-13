@@ -65,7 +65,22 @@
       "ProjectGuid": "d2d8e9e8-5e87-4cd7-8aa3-5cfc4137e0d2",
       "DisplayName": "Application",
       "ColorIndex": 11
+    },
+    "53f7c249-542b-4247-94dc-075a7d618079": {
+      "ProjectGuid": "53f7c249-542b-4247-94dc-075a7d618079",
+      "DisplayName": "Frame.Mysql",
+      "ColorIndex": 12
+    },
+    "13889f79-0888-4cd0-8f30-1419ca0a3c67": {
+      "ProjectGuid": "13889f79-0888-4cd0-8f30-1419ca0a3c67",
+      "DisplayName": "Frame.Dapper",
+      "ColorIndex": 13
+    },
+    "102c08d6-6027-41ec-9706-37175c4f82c9": {
+      "ProjectGuid": "102c08d6-6027-41ec-9706-37175c4f82c9",
+      "DisplayName": "samples",
+      "ColorIndex": 14
     }
   },
-  "NextColorIndex": 12
+  "NextColorIndex": 15
 }
