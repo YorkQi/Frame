@@ -7,13 +7,23 @@ namespace Frame.AspNetCore
     public static class ServiceControllerExtentions
     {
         public static IServiceCollection AutoServiceCollection<TMoudle>(this IServiceCollection app)
-            where TMoudle : AutoModule, new()
+            where TMoudle : IModule, new()
         {
-            var module = new TMoudle();
-            module.Load();
-            foreach (var item in AutoModule._Modules)
+            Assembly? startAssembly = Assembly.GetAssembly(typeof(TMoudle));
+            if (startAssembly != null)
             {
-                Assembly? assembly = Assembly.GetAssembly(item);
+                AutoDependencyInjection(startAssembly);
+
+                var assemblys = startAssembly.GetReferencedAssemblies();
+                foreach (var item in assemblys)
+                {
+                    Assembly? assembly = Assembly.Load(item);
+                    AutoDependencyInjection(assembly);
+                }
+            }
+            //自动注入
+            void AutoDependencyInjection(Assembly? assembly)
+            {
                 if (assembly != null)
                 {
                     Type[] types = assembly.GetTypes();
