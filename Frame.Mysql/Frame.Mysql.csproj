@@ -13,8 +13,4 @@
     <ProjectReference Include="..\Frame.Application\Frame.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="EntityAttribute\" />
-  </ItemGroup>
-
 </Project>
