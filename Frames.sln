@@ -18,7 +18,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Frame.AspNetCore", "Frame.A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DomainModel", "DomainModel\DomainModel.csproj", "{F73A2114-4B15-458F-ABD0-4BBD4A35A42E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{D2D8E9E8-5E87-4CD7-8AA3-5CFC4137E0D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{D2D8E9E8-5E87-4CD7-8AA3-5CFC4137E0D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frame.Mysql", "Frame.Mysql\Frame.Mysql.csproj", "{53F7C249-542B-4247-94DC-075A7D618079}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frame.Dapper", "Frame.Dapper\Frame.Dapper.csproj", "{13889F79-0888-4CD0-8F30-1419CA0A3C67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +54,14 @@ Global
 		{D2D8E9E8-5E87-4CD7-8AA3-5CFC4137E0D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2D8E9E8-5E87-4CD7-8AA3-5CFC4137E0D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2D8E9E8-5E87-4CD7-8AA3-5CFC4137E0D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53F7C249-542B-4247-94DC-075A7D618079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53F7C249-542B-4247-94DC-075A7D618079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53F7C249-542B-4247-94DC-075A7D618079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53F7C249-542B-4247-94DC-075A7D618079}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13889F79-0888-4CD0-8F30-1419CA0A3C67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13889F79-0888-4CD0-8F30-1419CA0A3C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13889F79-0888-4CD0-8F30-1419CA0A3C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13889F79-0888-4CD0-8F30-1419CA0A3C67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

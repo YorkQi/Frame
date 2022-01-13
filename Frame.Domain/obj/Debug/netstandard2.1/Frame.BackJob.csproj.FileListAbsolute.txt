@@ -1,0 +1,10 @@
+D:\项目\Frames\Frame.Domain\bin\Debug\netstandard2.1\Frame.BackJob.deps.json
+D:\项目\Frames\Frame.Domain\bin\Debug\netstandard2.1\Frame.BackJob.dll
+D:\项目\Frames\Frame.Domain\bin\Debug\netstandard2.1\Frame.BackJob.pdb
+D:\项目\Frames\Frame.Domain\obj\Debug\netstandard2.1\Frame.BackJob.csproj.AssemblyReference.cache
+D:\项目\Frames\Frame.Domain\obj\Debug\netstandard2.1\Frame.BackJob.GeneratedMSBuildEditorConfig.editorconfig
+D:\项目\Frames\Frame.Domain\obj\Debug\netstandard2.1\Frame.BackJob.AssemblyInfoInputs.cache
+D:\项目\Frames\Frame.Domain\obj\Debug\netstandard2.1\Frame.BackJob.AssemblyInfo.cs
+D:\项目\Frames\Frame.Domain\obj\Debug\netstandard2.1\Frame.BackJob.csproj.CoreCompileInputs.cache
+D:\项目\Frames\Frame.Domain\obj\Debug\netstandard2.1\Frame.BackJob.dll
+D:\项目\Frames\Frame.Domain\obj\Debug\netstandard2.1\Frame.BackJob.pdb
