@@ -11,24 +11,24 @@ namespace Frame.AspNetCore
         {
             var module = new TMoudle();
             module.Load();
-            foreach (var item in AutoModule._Imps)
+            foreach (var item in AutoModule._Modules)
             {
-                Assembly? imp = Assembly.GetAssembly(item);
-                if (imp != null)
+                Assembly? assembly = Assembly.GetAssembly(item);
+                if (assembly != null)
                 {
-                    Type[] types = imp.GetTypes();
+                    Type[] types = assembly.GetTypes();
                     foreach (Type type in types)
                     {
-                        var interfaces = type.GetInterfaces();
-                        if (interfaces.Any(t => t.Equals(typeof(IModule))) && interfaces.Any(t => t.Equals(typeof(ITransientInstance))))
+                        var imps = type.GetInterfaces();
+                        if (imps.Any(t => t.Equals(typeof(ITransientInstance))))
                         {
                             app.AddTransient(type);
                         }
-                        else if (interfaces.Any(t => t.Equals(typeof(IModule))) && interfaces.Any(t => t.Equals(typeof(ISingletonInstance))))
+                        else if (imps.Any(t => t.Equals(typeof(ISingletonInstance))))
                         {
                             app.AddSingleton(type);
                         }
-                        else if (interfaces.Any(t => t.Equals(typeof(IModule))) && interfaces.Any(t => t.Equals(typeof(IScopedInstance))))
+                        else if (imps.Any(t => t.Equals(typeof(IScopedInstance))))
                         {
                             app.AddScoped(type);
                         }
@@ -41,38 +41,6 @@ namespace Frame.AspNetCore
             }
 
             return app;
-
-            #region Old
-
-            //var types=typeof(TModule).GetInterfaces();
-            //if (types != null)
-            //{
-            //    foreach (var item in types)
-            //    {
-            //        var interfaces = item.GetInterfaces();
-            //        if (interfaces.Any(t => t.Equals(typeof(IModule))))
-            //        {
-            //            foreach (var impItem in types)
-            //            {
-            //                var impInterfaces = impItem.GetInterfaces();
-            //                if (impInterfaces.Any(t => t.Equals(typeof(ITransientInstance))))
-            //                {
-            //                    app.AddTransient(item);
-            //                }
-            //                else if (impInterfaces.Any(t => t.Equals(typeof(ISingletonInstance))))
-            //                {
-            //                    app.AddSingleton(item);
-            //                }
-            //                else if (impInterfaces.Any(t => t.Equals(typeof(IScopedInstance))))
-            //                {
-            //                    app.AddScoped(item);
-            //                }
-            //            }
-            //        }
-            //    }
-            //}
-
-            #endregion
         }
     }
 }

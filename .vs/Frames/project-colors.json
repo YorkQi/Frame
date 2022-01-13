@@ -60,7 +60,12 @@
       "ProjectGuid": "f73a2114-4b15-458f-abd0-4bbd4a35a42e",
       "DisplayName": "DomainModel",
       "ColorIndex": 10
+    },
+    "d2d8e9e8-5e87-4cd7-8aa3-5cfc4137e0d2": {
+      "ProjectGuid": "d2d8e9e8-5e87-4cd7-8aa3-5cfc4137e0d2",
+      "DisplayName": "Application",
+      "ColorIndex": 11
     }
   },
-  "NextColorIndex": 11
+  "NextColorIndex": 12
 }

@@ -7,8 +7,8 @@ namespace Tests
     {
         public override void Load()
         {
-            _Imps.Add(typeof(WebModule));
-            _Imps.Add(typeof(ApplicationModule));
+            _Modules.Add(typeof(WebModule));
+            _Modules.Add(typeof(ApplicationModule));
         }
     }
 }
