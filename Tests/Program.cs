@@ -12,6 +12,8 @@ builder.Services.AddSwaggerGen();
 //×Ô¶¯×¢Èë
 builder.Services.AutoServiceCollection<WebModule>();
 
+builder.Services.AutoModuleServiceCollection<TestModule>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
