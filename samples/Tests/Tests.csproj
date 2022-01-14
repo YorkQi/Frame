@@ -14,9 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Frame.AspNetCore\Frame.AspNetCore.csproj" />
     <ProjectReference Include="..\Application\Application.csproj" />
     <ProjectReference Include="..\DomainModel\DomainModel.csproj" />
-    <ProjectReference Include="..\Frame.AspNetCore\Frame.AspNetCore.csproj" />
   </ItemGroup>
 
 </Project>
