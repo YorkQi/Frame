@@ -18,7 +18,7 @@ namespace Frame.AspNetCore
         {
             Assembly? assembly = Assembly.GetAssembly(typeof(TMoudle));
 
-            if (assembly is null) throw new ArgumentNullException(nameof(assembly));
+            if (assembly is null) throw new ArgumentNullException("程序集为空无法注入");
 
             AutoDependencyInjection(assembly);
 
@@ -66,7 +66,7 @@ namespace Frame.AspNetCore
         {
             Assembly? assembly = Assembly.GetAssembly(typeof(TMoudle));
 
-            if (assembly is null) throw new ArgumentNullException(nameof(assembly));
+            if (assembly is null) throw new ArgumentNullException("程序集为空无法注入");
 
             AutoDependencyInjection(assembly);
 

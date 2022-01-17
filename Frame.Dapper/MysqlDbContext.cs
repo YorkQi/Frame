@@ -56,7 +56,7 @@ namespace Frame.Dapper
                 if (_tran != null)
                 {
                     _tran.Commit();
-                    _dbConnection.Close();
+                    ConnectionClose();
                     _tran.Dispose();
                 }
             }
@@ -69,7 +69,7 @@ namespace Frame.Dapper
                 if (_tran != null)
                 {
                     _tran.Rollback();
-                    _dbConnection.Close();
+                    ConnectionClose();
                     _tran.Dispose();
                 }
             }
