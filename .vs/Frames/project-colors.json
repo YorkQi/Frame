@@ -80,7 +80,37 @@
       "ProjectGuid": "102c08d6-6027-41ec-9706-37175c4f82c9",
       "DisplayName": "samples",
       "ColorIndex": 14
+    },
+    "db4395dc-126a-4232-b7c6-2e1e992d0053": {
+      "ProjectGuid": "db4395dc-126a-4232-b7c6-2e1e992d0053",
+      "DisplayName": "Repository",
+      "ColorIndex": 15
+    },
+    "ec82b23b-f769-420c-9d81-8762d05eb8c6": {
+      "ProjectGuid": "ec82b23b-f769-420c-9d81-8762d05eb8c6",
+      "DisplayName": "Service",
+      "ColorIndex": 0
+    },
+    "c75f8bb3-120f-4ec1-8a31-0c0995f3a6e7": {
+      "ProjectGuid": "c75f8bb3-120f-4ec1-8a31-0c0995f3a6e7",
+      "DisplayName": "Factory",
+      "ColorIndex": 1
+    },
+    "98d3d004-ff20-429c-8931-b53ef79db86d": {
+      "ProjectGuid": "98d3d004-ff20-429c-8931-b53ef79db86d",
+      "DisplayName": "DomainModel",
+      "ColorIndex": 2
+    },
+    "8a4a6fcd-89ed-4ce4-ba87-67a80fe9b6b8": {
+      "ProjectGuid": "8a4a6fcd-89ed-4ce4-ba87-67a80fe9b6b8",
+      "DisplayName": "Application",
+      "ColorIndex": 3
+    },
+    "4b81c1e0-3c9b-4e59-8a7c-35095d71e162": {
+      "ProjectGuid": "4b81c1e0-3c9b-4e59-8a7c-35095d71e162",
+      "DisplayName": "Tests",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 15
+  "NextColorIndex": 5
 }
