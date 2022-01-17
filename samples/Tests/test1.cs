@@ -2,7 +2,7 @@
 
 namespace Tests
 {
-    public class test1: IModule, ISingletonInstance
+    public class Test1: IModule, ISingletonInstance
     {
         public string Name { get { return "york"; } }
     }

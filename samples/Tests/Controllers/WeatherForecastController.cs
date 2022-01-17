@@ -15,9 +15,9 @@ namespace Tests.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        private readonly test1 _test;
+        private readonly Test1 _test;
         private readonly Test _test1;
-        public WeatherForecastController(ILogger<WeatherForecastController> logger,test1 test, Test test1)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, Test1 test, Test test1)
         {
             _logger = logger;
             _test = test;
