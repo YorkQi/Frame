@@ -28,19 +28,26 @@ namespace Tests.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
-            throw new WebException(500000,"test");
-
-            var s = _test.Name;
-            var ss = _test1.Name;
-
-            _logger.LogInformation("");
-
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            var weatherForecast = new List<WeatherForecast>();
+            try
             {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            }).ToArray();
+                var s = _test.Name;
+                var ss = _test1.Name;
+            }
+            catch (Exception ex)
+            {
+                throw new WebException(50000, ex.Message, ex);
+            }
+            finally
+            {
+                weatherForecast = Enumerable.Range(1, 5).Select(index => new WeatherForecast
+                {
+                    Date = DateTime.Now.AddDays(index),
+                    TemperatureC = Random.Shared.Next(-20, 55),
+                    Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+                }).ToList();
+            }
+            return weatherForecast;
         }
     }
 }
