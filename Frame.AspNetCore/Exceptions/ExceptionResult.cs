@@ -1,4 +1,4 @@
-﻿namespace Frame.AspNetCore
+﻿namespace Frame.AspNetCore.Exceptions
 {
     public class ExceptionResult
     {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 
-namespace Frame.AspNetCore
+namespace Frame.AspNetCore.Exceptions
 {
     public class WebException:Exception
     {
