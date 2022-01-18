@@ -1,5 +1,5 @@
 using Application;
-using Frame.AspNetCore;
+using Frame.AspNetCore.Exceptions;
 using Microsoft.AspNetCore.Mvc;
 
 
