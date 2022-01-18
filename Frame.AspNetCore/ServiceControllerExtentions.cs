@@ -1,8 +1,7 @@
 ﻿using Frame.Core;
-using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
-namespace Frame.AspNetCore
+namespace Microsoft.Extensions.DependencyInjection
 {
     public static class ServiceControllerExtentions
     {

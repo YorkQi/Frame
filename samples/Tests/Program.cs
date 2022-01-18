@@ -1,4 +1,3 @@
-using Frame.AspNetCore;
 using Tests;
 
 var builder = WebApplication.CreateBuilder(args);

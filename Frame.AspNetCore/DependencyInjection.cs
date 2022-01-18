@@ -1,9 +1,6 @@
 ﻿using Frame.AspNetCore.Exceptions;
 
-using Microsoft.Extensions.DependencyInjection;
-
-
-namespace Frame.AspNetCore
+namespace Microsoft.Extensions.DependencyInjection
 {
     public static class DependencyInjection
     {
