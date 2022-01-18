@@ -11,8 +11,8 @@ builder.Services.AddSwaggerGen();
 
 //×Ô¶¯×¢Èë
 builder.Services.AutoServiceCollection<WebModule>();
-
 builder.Services.AutoModuleServiceCollection<TestModule>();
+builder.Services.AddService();
 
 var app = builder.Build();
 

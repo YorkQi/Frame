@@ -101,7 +101,6 @@ namespace Frame.AspNetCore
                 }
             }
 
-
             return app;
         }
     }

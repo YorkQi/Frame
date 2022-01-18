@@ -1,4 +1,5 @@
 using Application;
+using Frame.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -27,16 +28,19 @@ namespace Tests.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            throw new WebException(500000,"test");
+
             var s = _test.Name;
             var ss = _test1.Name;
-            
+
+            _logger.LogInformation("");
+
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = Random.Shared.Next(-20, 55),
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
+            }).ToArray();
         }
     }
 }
