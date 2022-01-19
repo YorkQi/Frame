@@ -4,6 +4,7 @@
     {
         public static IServiceCollection AddRepository(this IServiceCollection services)
         {
+            
             return services;
         }
     }
