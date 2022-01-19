@@ -2,7 +2,7 @@
 
 namespace Microsoft.Extensions.DependencyInjection
 {
-    public static class ServiceDependencyInjection
+    public static class AspNetCoreDependencyInjection
     {
         public static IServiceCollection AddService(this IServiceCollection services)
         {
