@@ -13,7 +13,7 @@
     },
     "3932e6e7-674d-43aa-baa8-d3a79381f9bb": {
       "ProjectGuid": "3932e6e7-674d-43aa-baa8-d3a79381f9bb",
-      "DisplayName": "Frame.BackJob",
+      "DisplayName": "Frame.Scheduler",
       "ColorIndex": 2
     },
     "0b6b204f-5388-425c-aa48-ef628c86737e": {
@@ -98,7 +98,7 @@
     },
     "98d3d004-ff20-429c-8931-b53ef79db86d": {
       "ProjectGuid": "98d3d004-ff20-429c-8931-b53ef79db86d",
-      "DisplayName": "DomainModel",
+      "DisplayName": "Domain",
       "ColorIndex": 2
     },
     "8a4a6fcd-89ed-4ce4-ba87-67a80fe9b6b8": {
@@ -110,7 +110,12 @@
       "ProjectGuid": "4b81c1e0-3c9b-4e59-8a7c-35095d71e162",
       "DisplayName": "Tests",
       "ColorIndex": 4
+    },
+    "5e666565-b00f-48d4-9750-2195af001498": {
+      "ProjectGuid": "5e666565-b00f-48d4-9750-2195af001498",
+      "DisplayName": "Frame.Scheduler",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 6
 }

@@ -10,7 +10,6 @@ namespace Frame.Mysql
         Task<IEnumerable<TResult>> QueryAsync<TResult>(string sql, object? param = null);
         TResult Get<TResult>(string sql, object? param = null);
         Task<TResult> GetAsync<TResult>(string sql, object? param = null);
-
         void BeginTransaction(IsolationLevel level= IsolationLevel.Unspecified);
         void Commit();
         void Rollback();

@@ -30,6 +30,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Frame.Scheduler", "Frame.Sc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "samples\Domain\Domain.csproj", "{C2E4DA52-8B9C-4684-84A5-E86F0ADA8ADC}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Frame.Repository", "Frame.Repository\Frame.Repository.csproj", "{DD7A913C-9FF6-4343-B8F4-5687C3073581}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -80,6 +82,10 @@ Global
 		{C2E4DA52-8B9C-4684-84A5-E86F0ADA8ADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2E4DA52-8B9C-4684-84A5-E86F0ADA8ADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2E4DA52-8B9C-4684-84A5-E86F0ADA8ADC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD7A913C-9FF6-4343-B8F4-5687C3073581}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD7A913C-9FF6-4343-B8F4-5687C3073581}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD7A913C-9FF6-4343-B8F4-5687C3073581}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD7A913C-9FF6-4343-B8F4-5687C3073581}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

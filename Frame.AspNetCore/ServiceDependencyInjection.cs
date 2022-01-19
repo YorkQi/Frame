@@ -9,7 +9,6 @@ namespace Microsoft.Extensions.DependencyInjection
             services.AddMvcCore(op => {
                 op.Filters.Add(typeof(ExceptionFilter));
             });
-
             return services;
         }
     }
