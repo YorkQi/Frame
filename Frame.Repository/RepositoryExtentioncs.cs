@@ -19,7 +19,10 @@ namespace Frame.Repository
         /// <returns></returns>
         public TRepository GetRepository<TRepository>() where TRepository : IRepository<IEntity>, new()
         {
-            return _service.GetService<TRepository>();
+            var repository = _service.GetService<TRepository>();
+            if (repository == null)
+                repository = new TRepository();
+            return repository;
         }
     }
 }

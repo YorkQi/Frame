@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Frame.Application\Frame.Core.csproj" />
+    <ProjectReference Include="..\Frame.Mysql\Frame.Mysql.csproj" />
   </ItemGroup>
 
 </Project>

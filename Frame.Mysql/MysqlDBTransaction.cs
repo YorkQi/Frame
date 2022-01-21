@@ -2,73 +2,78 @@
 
 namespace Frame.Mysql
 {
-    public class MysqlDBTransaction: IMysqlDBTransaction
+    public class MysqlDBTransaction: MysqlDBContext, IMysqlDBTransaction
     {
-        private readonly IDbConnection _dbConnection;
-
-        private  IDbTransaction? _tran;
-
-        public MysqlDBTransaction(IDbTransaction? tran, IDbConnection dbConnection)
+        public MysqlDBTransaction(IMysqlBuilder mysqlBuilder)
+             : base(mysqlBuilder)
         {
-            _dbConnection = dbConnection;
+
         }
 
         public void BeginTransaction(IsolationLevel level)
         {
             ConnectionOpen();
-            if (_tran == null)
+            if (DbTransaction == null)
             {
-                _tran = _dbConnection.BeginTransaction(level);
+                DbTransaction = DbConnection?.BeginTransaction(level);
             }
         }
         public void Commit()
         {
-            if (_dbConnection.State == ConnectionState.Open)
+            if (DbConnection == null)
             {
-                if (_tran != null)
+                throw new DataException("没有数据库连接对象");
+            }
+            if (DbConnection.State == ConnectionState.Open)
+            {
+                if (DbTransaction != null)
                 {
-                    _tran.Commit();
+                    DbTransaction.Commit();
                     ConnectionClose();
-                    _tran.Dispose();
+                    DbTransaction.Dispose();
                 }
             }
         }
 
         public void Rollback()
         {
-            if (_dbConnection.State == ConnectionState.Open)
+            if (DbConnection == null)
             {
-                if (_tran != null)
+                throw new DataException("没有数据库连接对象");
+            }
+            if (DbConnection.State == ConnectionState.Open)
+            {
+                if (DbTransaction != null)
                 {
-                    _tran.Rollback();
+                    DbTransaction.Rollback();
                     ConnectionClose();
-                    _tran.Dispose();
+                    DbTransaction.Dispose();
                 }
             }
         }
 
         private void ConnectionOpen()
         {
-            if (_dbConnection == null)
+            if (DbConnection == null)
             {
                 throw new DataException("没有数据库连接对象");
             }
-            if (_dbConnection.State != ConnectionState.Closed)
+            if (DbConnection.State != ConnectionState.Closed)
             {
-                _dbConnection.Close();
+                DbConnection.Close();
             }
-            _dbConnection.Open();
+            DbConnection.Open();
         }
 
         private void ConnectionClose()
         {
-            if (_dbConnection == null)
+            if (DbConnection == null)
             {
                 throw new DataException("没有数据库连接对象");
             }
-            if (_dbConnection.State != ConnectionState.Closed)
+            if (DbConnection.State != ConnectionState.Closed)
             {
-                _dbConnection.Close();
+                DbConnection.Close();
             }
         }
 

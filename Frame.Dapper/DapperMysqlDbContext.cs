@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace Frame.Dapper
 {
-    public class MysqlDbContext : IMysqlDBContext
+    public class DapperMysqlDbContext : MysqlDBContext
     {
-        public MysqlDbContext(IDbConnection dbConnection)
+        public DapperMysqlDbContext(IMysqlBuilder mysqlBuilder)
+            :base(mysqlBuilder)
         {
-            _dbConnection = dbConnection;
+
         }
-        private IDbTransaction? _tran;
-        public IDbConnection _dbConnection;
 
         public int? _commandTimeout = null;
         public CommandType? _commandType= null;
@@ -22,28 +21,29 @@ namespace Frame.Dapper
 
         public IEnumerable<TResult> Query<TResult>(string sql, object? param = null)
         {
-            return _dbConnection.Query<TResult>(sql, param, _tran, true, _commandTimeout, _commandType);
+            return DbConnection.Query<TResult>(sql, param, DbTransaction, true, _commandTimeout, _commandType);
         }
         public Task<IEnumerable<TResult>> QueryAsync<TResult>(string sql, object? param = null)
         {
-            return _dbConnection.QueryAsync<TResult>(sql, param, _tran, _commandTimeout, _commandType);
+            return DbConnection.QueryAsync<TResult>(sql, param, DbTransaction, _commandTimeout, _commandType);
         }
         public TResult Get<TResult>(string sql, object? param = null)
         {
-            return _dbConnection.QueryFirst<TResult>(sql, param, _tran, _commandTimeout, _commandType);
+            return DbConnection.QueryFirst<TResult>(sql, param, DbTransaction, _commandTimeout, _commandType);
         }
         public Task<TResult> GetAsync<TResult>(string sql, object? param = null)
         {
-            return _dbConnection.QueryFirstAsync<TResult>(sql, param, _tran, _commandTimeout, _commandType);
+            return DbConnection.QueryFirstAsync<TResult>(sql, param, DbTransaction, _commandTimeout, _commandType);
         }
 
 
         #endregion
 
 
-        ~MysqlDbContext()
+        ~DapperMysqlDbContext()
         {
-            _dbConnection.Close();
+            if (DbConnection != null)
+                DbConnection.Close();
         }
     }
 }

@@ -2,6 +2,6 @@
 {
     public class MysqlOptions
     {
-        public string ConnectionString { get; set; }
+        public string? ConnectionString { get; set; }
     }
 }

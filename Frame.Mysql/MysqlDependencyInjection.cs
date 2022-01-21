@@ -7,9 +7,9 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         public static IServiceCollection AddMysql(this IServiceCollection services,Action<MysqlOptions> options)
         {
-            services.AddScoped(_ => options);
-            services.AddSingleton<IMysqlBuilder>();
-            
+            services.AddSingleton(_ => options);
+            services.AddSingleton<IMysqlBuilder,MysqlBuilder>();
+            services.AddScoped<MysqlDBContext>();
             return services;
         }
     }
