@@ -1,7 +1,8 @@
 ﻿using System.Data;
+
 namespace Frame.Mysql
 {
-    public abstract class MysqlDBContext
+    public abstract class MysqlDBContext : IDBContext
     {
         public IDbConnection? DbConnection { get; protected set; }
         public IDbTransaction? DbTransaction { get; protected set; }
