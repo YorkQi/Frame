@@ -115,7 +115,32 @@
       "ProjectGuid": "5e666565-b00f-48d4-9750-2195af001498",
       "DisplayName": "Frame.Scheduler",
       "ColorIndex": 5
+    },
+    "91403450-50be-44ec-b8f1-adb18d0251d7": {
+      "ProjectGuid": "91403450-50be-44ec-b8f1-adb18d0251d7",
+      "DisplayName": "Frame.Repositories",
+      "ColorIndex": 6
+    },
+    "4e5bd296-6e50-40a0-bec7-598b5bfc7b98": {
+      "ProjectGuid": "4e5bd296-6e50-40a0-bec7-598b5bfc7b98",
+      "DisplayName": "Frame.Repository",
+      "ColorIndex": 7
+    },
+    "dd7a913c-9ff6-4343-b8f4-5687c3073581": {
+      "ProjectGuid": "dd7a913c-9ff6-4343-b8f4-5687c3073581",
+      "DisplayName": "Frame.Repository",
+      "ColorIndex": 8
+    },
+    "e70d06e7-3560-4494-abbd-d2932b955711": {
+      "ProjectGuid": "e70d06e7-3560-4494-abbd-d2932b955711",
+      "DisplayName": "Repository",
+      "ColorIndex": 9
+    },
+    "c2e4da52-8b9c-4684-84a5-e86f0ada8adc": {
+      "ProjectGuid": "c2e4da52-8b9c-4684-84a5-e86f0ada8adc",
+      "DisplayName": "Domain",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 11
 }

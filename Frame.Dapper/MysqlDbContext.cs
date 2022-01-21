@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Frame.Dapper
 {
-    public class MysqlDbContext : IMysqlDbContext
+    public class MysqlDbContext : IMysqlDBContext
     {
         public MysqlDbContext(IDbConnection dbConnection)
         {
@@ -40,67 +40,6 @@ namespace Frame.Dapper
 
         #endregion
 
-        #region SqlConnection
-        public void BeginTransaction(IsolationLevel level)
-        {
-            ConnectionOpen();
-            if (_tran == null)
-            {
-                _tran = _dbConnection.BeginTransaction(level);
-            }
-        }
-        public void Commit()
-        {
-            if (_dbConnection.State == ConnectionState.Open)
-            {
-                if (_tran != null)
-                {
-                    _tran.Commit();
-                    ConnectionClose();
-                    _tran.Dispose();
-                }
-            }
-        }
-
-        public void Rollback()
-        {
-            if (_dbConnection.State == ConnectionState.Open)
-            {
-                if (_tran != null)
-                {
-                    _tran.Rollback();
-                    ConnectionClose();
-                    _tran.Dispose();
-                }
-            }
-        }
-
-        private void ConnectionOpen()
-        {
-            if (_dbConnection == null)
-            {
-                throw new DataException("没有数据库连接对象");
-            }
-            if (_dbConnection.State != ConnectionState.Closed)
-            {
-                _dbConnection.Close();
-            }
-            _dbConnection.Open();
-        }
-
-        private void ConnectionClose()
-        {
-            if (_dbConnection == null)
-            {
-                throw new DataException("没有数据库连接对象");
-            }
-            if (_dbConnection.State != ConnectionState.Closed)
-            {
-                _dbConnection.Close();
-            }
-        }
-
-        #endregion
 
         ~MysqlDbContext()
         {
