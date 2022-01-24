@@ -1,7 +1,11 @@
-﻿namespace Frame.Mysql
+﻿using System.Collections.Generic;
+
+namespace Frame.Mysql
 {
     public class MysqlOptions
     {
-        public string? ConnectionString { get; set; }
+        public List<string>? QueryConnectionString { get; set; }
+
+        public List<string>? CommandConnectionString { get; set; }
     }
 }

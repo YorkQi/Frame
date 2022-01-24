@@ -2,7 +2,7 @@
 
 namespace Frame.Mysql
 {
-    public abstract class MysqlDBContext : IDBContext
+    public abstract class MysqlDBContext : IMysqlDBContext
     {
         public IDbConnection? DbConnection { get; protected set; }
         public IDbTransaction? DbTransaction { get; protected set; }

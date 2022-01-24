@@ -1,5 +1,6 @@
 using Application;
 using Frame.AspNetCore.Exceptions;
+using Frame.Mysql;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -18,17 +19,21 @@ namespace Tests.Controllers
 
         private readonly Test1 _test;
         private readonly Test _test1;
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, Test1 test, Test test1)
+
+        private readonly IMysqlDBContext _dbcontext;
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, Test1 test, Test test1, IMysqlDBContext dbcontext)
         {
             _logger = logger;
             _test = test;
             _test1 = test1;
+            _dbcontext = dbcontext;
         }
 
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
             var weatherForecast = new List<WeatherForecast>();
+            _dbcontext.Get<>()
             try
             {
                 var s = _test.Name;
