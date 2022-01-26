@@ -4,10 +4,10 @@ using System;
 
 namespace Frame.Repository
 {
-    public class RepositoryExtentioncs
+    public class RepositoryExtentions
     {
         public readonly IServiceProvider _service;
-        public RepositoryExtentioncs(IServiceProvider service)
+        public RepositoryExtentions(IServiceProvider service)
         {
             _service = service;
         }
@@ -17,12 +17,12 @@ namespace Frame.Repository
         /// </summary>
         /// <typeparam name="TRepository"></typeparam>
         /// <returns></returns>
-        public TRepository GetRepository<TRepository>() where TRepository : IRepository<IEntity>, new()
+        public TRepository GetRepository<TRepository>()
+            where TRepository : IRepository, new()
         {
             var repository = _service.GetService<TRepository>();
-            if (repository == null)
-                repository = new TRepository();
-            return repository;
+
+            return repository ?? new TRepository();
         }
     }
 }

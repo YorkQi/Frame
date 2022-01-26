@@ -4,7 +4,7 @@ namespace Frame.Mysql
 {
     public class MysqlDBTransaction: MysqlDBContext, IMysqlDBTransaction
     {
-        public MysqlDBTransaction(IMysqlBuilder mysqlBuilder)
+        public MysqlDBTransaction(IMysqlConnectionBuilder mysqlBuilder)
              : base(mysqlBuilder)
         {
 

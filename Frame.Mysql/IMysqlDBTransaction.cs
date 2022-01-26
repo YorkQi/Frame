@@ -8,7 +8,6 @@ namespace Frame.Mysql
 
         void Commit();
 
-
         void Rollback();
 
     }

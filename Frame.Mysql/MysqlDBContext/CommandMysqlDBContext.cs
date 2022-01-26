@@ -1,14 +1,15 @@
-﻿using System.Data;
+﻿using Frame.Mysql.Operations;
+using System.Data;
 
 namespace Frame.Mysql
 {
-    public abstract class MysqlDBContext : IMysqlDBContext
+    public abstract class CommandMysqlDBContext : ICommandOperation
     {
         public IDbConnection? DbConnection { get; protected set; }
         public IDbTransaction? DbTransaction { get; protected set; }
 
-        private readonly IMysqlBuilder _mysqlBuilder;
-        public MysqlDBContext(IMysqlBuilder mysqlBuilder)
+        private readonly IMysqlConnectionBuilder _mysqlBuilder;
+        public CommandMysqlDBContext(IMysqlConnectionBuilder mysqlBuilder)
         {
             _mysqlBuilder = mysqlBuilder;
         }
@@ -16,7 +17,7 @@ namespace Frame.Mysql
         public void GetConnection()
         {
             if (_mysqlBuilder != null)
-                DbConnection = _mysqlBuilder.GetDbConnection();
+                DbConnection = _mysqlBuilder.GetDbConnection(this);
         }
     }
 }

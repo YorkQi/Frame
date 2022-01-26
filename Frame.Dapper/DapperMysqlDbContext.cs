@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Frame.Dapper
 {
-    public class DapperMysqlDbContext : MysqlDBContext
+    public class DapperMysqlDbContext : IMysqlDBContext
     {
-        public DapperMysqlDbContext(IMysqlBuilder mysqlBuilder)
-            :base(mysqlBuilder)
+        public DapperMysqlDbContext(IMysqlConnectionBuilder mysqlBuilder)
+            : base(mysqlBuilder)
         {
 
         }
 
         public int? _commandTimeout = null;
-        public CommandType? _commandType= null;
+        public CommandType? _commandType = null;
 
         #region SqlCommand
 

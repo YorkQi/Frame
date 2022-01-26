@@ -16,6 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Frame.AspNetCore\Frame.AspNetCore.csproj" />
     <ProjectReference Include="..\Application\Application.csproj" />
+    <ProjectReference Include="..\Repository\Repository.csproj" />
   </ItemGroup>
 
 </Project>
