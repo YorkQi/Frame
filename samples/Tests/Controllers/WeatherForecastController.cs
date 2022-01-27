@@ -25,7 +25,7 @@ namespace Tests.Controllers
         public WeatherForecastController(ILogger<WeatherForecastController> logger, 
             Test1 test, 
             Test test1,
-            MysqlRepository read)
+            MysqlRepository repository)
         {
             _logger = logger;
             _test = test;

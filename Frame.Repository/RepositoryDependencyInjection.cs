@@ -1,13 +1,9 @@
-﻿using Frame.Repository;
-using System;
-
-namespace Microsoft.Extensions.DependencyInjection
+﻿namespace Microsoft.Extensions.DependencyInjection
 {
     public static class RepositoryDependencyInjection
     {
         public static IServiceCollection AddRepository(this IServiceCollection services)
         {
-
             return services;
         }
     }
