@@ -1,17 +1,19 @@
 ﻿using System;
 
-namespace Bucks.DataAccess.DbCommand
+namespace Frame.Mysql.CommandExtension
 {
-    public abstract class Filter
+    public class Sort
     {
-        public Filter(string field)
+        public Sort(string field, bool asc = true)
         {
             if (string.IsNullOrEmpty(field))
             {
                 throw new ArgumentNullException(nameof(field));
             }
             Field = field;
+            ASC = asc;
         }
-        public virtual string Field { get; private set; }
+        public string Field { get; set; }
+        public bool ASC { get; set; }
     }
 }

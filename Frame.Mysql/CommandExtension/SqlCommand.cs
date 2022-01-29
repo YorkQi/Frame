@@ -1,6 +1,6 @@
 ﻿using Dapper;
 
-namespace Bucks.DataAccess.DbCommand
+namespace Frame.Mysql.CommandExtension
 {
     public class SqlCommand
     {

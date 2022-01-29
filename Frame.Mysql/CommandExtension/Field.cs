@@ -1,6 +1,7 @@
-﻿using System;
+﻿
+using System;
 
-namespace Bucks.DataAccess.DbCommand
+namespace Frame.Mysql.CommandExtension
 {
     public class Field
     {

@@ -1,4 +1,4 @@
-﻿namespace Bucks.DataAccess.DbCommand.Filters
+﻿namespace Frame.Mysql.CommandExtension.Filters
 {
     public enum FuzzyType
     {

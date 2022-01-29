@@ -1,35 +1,35 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace Bucks.DataAccess.DbCommand
+namespace Frame.Mysql.CommandExtension
 {
-    public class SortCollection : IEnumerable<Sort>
+    public class FilterCollection : IEnumerable<Filter>
     {
         private ArrayList _innerList;
 
-        public SortCollection()
+        public FilterCollection()
         {
             _innerList = new ArrayList();
         }
 
         public int Count => _innerList.Count;
 
-        public void Add(Sort sort)
+        public void Add(Filter filter)
         {
-            _innerList.Add(sort);
+            _innerList.Add(filter);
         }
 
-        public void Add(params Sort[] sorts)
+        public void Add(params Filter[] filters)
         {
-            _innerList.AddRange(sorts);
+            _innerList.AddRange(filters);
         }
 
-        public IEnumerator<Sort> GetEnumerator()
+        public IEnumerator<Filter> GetEnumerator()
         {
             IEnumerator iterator = _innerList.GetEnumerator();
             while (iterator.MoveNext())
             {
-                yield return (Sort)iterator.Current;
+                yield return (Filter)iterator.Current;
             }
         }
 

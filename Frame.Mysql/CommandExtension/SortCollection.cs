@@ -1,35 +1,35 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace Bucks.DataAccess.DbCommand
+namespace Frame.Mysql.CommandExtension
 {
-    public class FieldCollection : IEnumerable<Field>
+    public class SortCollection : IEnumerable<Sort>
     {
         private ArrayList _innerList;
 
-        public FieldCollection()
+        public SortCollection()
         {
             _innerList = new ArrayList();
         }
 
         public int Count => _innerList.Count;
 
-        public void Add(Field field)
+        public void Add(Sort sort)
         {
-            _innerList.Add(field);
+            _innerList.Add(sort);
         }
 
-        public void Add(params Field[] fields)
+        public void Add(params Sort[] sorts)
         {
-            _innerList.AddRange(fields);
+            _innerList.AddRange(sorts);
         }
 
-        public IEnumerator<Field> GetEnumerator()
+        public IEnumerator<Sort> GetEnumerator()
         {
             IEnumerator iterator = _innerList.GetEnumerator();
             while (iterator.MoveNext())
             {
-                yield return (Field)iterator.Current;
+                yield return (Sort)iterator.Current;
             }
         }
 

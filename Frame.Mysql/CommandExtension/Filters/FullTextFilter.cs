@@ -1,4 +1,4 @@
-﻿namespace Bucks.DataAccess.DbCommand.Filters
+﻿namespace Frame.Mysql.CommandExtension.Filters
 {
     /// <summary>
     /// 全文索引过滤

@@ -37,17 +37,39 @@ namespace Frame.Mysql
         }
         public IEntityPrimary Insert<T>(T entity) where T : IEntity
         {
-            return DbConnection.Execute<T>(sql, param, DbTransaction, _commandTimeout, _commandType);
+            return DbConnection.Execute(sql, param, DbTransaction, _commandTimeout, _commandType);
         }
         public Task<IEntityPrimary> InsertAsync<T>(T entity) where T : IEntity
         {
+            return DbConnection.ExecuteAsync<T>(sql, param, DbTransaction, _commandTimeout, _commandType);
+        }
+        public void InsertBatch<T>(T entity) where T : IEntity
+        {
             return DbConnection.Execute<T>(sql, param, DbTransaction, _commandTimeout, _commandType);
         }
-        public void InsertBatch<T>(T entity) where T : IEntity;
-        public Task InsertBatchAsync<T>(IEnumerable<T> entity) where T : IEntity;
-        public IEntityPrimary Update<T>(T entity) where T : IEntity;
-        public Task<IEntityPrimary> UpdateAsync<T>(T entity) where T : IEntity;
-        public void UpdateBatch<T>(T entity) where T : IEntity;
-        public Task UpdateBatchAsync<T>(IEnumerable<T> entity) where T : IEntity;
+        public Task InsertBatchAsync<T>(IEnumerable<T> entity) where T : IEntity
+        {
+            return DbConnection.ExecuteAsync<T>(sql, param, DbTransaction, _commandTimeout, _commandType);
+        }
+        public IEntityPrimary Update<T>(T entity) where T : IEntity
+        {
+            return DbConnection.Execute<T>(sql, param, DbTransaction, _commandTimeout, _commandType);
+        }
+        public Task<IEntityPrimary> UpdateAsync<T>(T entity) where T : IEntity
+        {
+            return DbConnection.ExecuteAsync<T>(sql, param, DbTransaction, _commandTimeout, _commandType);
+        }
+        public void UpdateBatch<T>(T entity) where T : IEntity
+
+        {
+            return DbConnection.ExecuteAsync<T>(sql, param, DbTransaction, _commandTimeout, _commandType);
+        }
+        public Task UpdateBatchAsync<T>(IEnumerable<T> entity) where T : IEntity
+        {
+            return DbConnection.ExecuteAsync<T>(sql, param, DbTransaction, _commandTimeout, _commandType);
+        }
+
+
+
     }
 }
