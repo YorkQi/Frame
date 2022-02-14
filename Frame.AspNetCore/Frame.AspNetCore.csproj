@@ -14,7 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Frame.Application\Frame.Core.csproj" />
     <ProjectReference Include="..\Frame.Repository\Frame.Repository.csproj" />
   </ItemGroup>
 

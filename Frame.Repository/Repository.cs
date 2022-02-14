@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Frame.Core;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Frame.Repository
 {
-    internal class Repository:Ire
+    internal class Repository: IRepository
     {
     }
 }

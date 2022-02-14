@@ -9,7 +9,7 @@ namespace Microsoft.Extensions.DependencyInjection
         {
             services.AddSingleton(_ => options);
             services.AddSingleton<IMysqlConnectionBuilder, MysqlConnectionBuilder>();
-            services.AddScoped<IMysqlDBContext, MysqlDBContext>();
+            //services.AddScoped<IMysqlDBContext, MysqlDBContext>();
             return services;
         }
     }

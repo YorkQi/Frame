@@ -11,13 +11,13 @@ namespace Microsoft.Extensions.DependencyInjection
                 op.Filters.Add(typeof(ExceptionFilter));
             });
             services.AddRepository();
-            services.AddMysql(
-                op =>
-                {
-                    op.QueryConnectionString?.Add(
-                        @"Database=test;Data Source=154.8.192.215,5566;User Id=root;Password=york123;pooling=true;
-                        CharSet=utf8;port=3306;Allow User Variables=True;");
-                });
+            //services.AddMysql(
+            //    op =>
+            //    {
+            //        op.QueryConnectionString?.Add(
+            //            @"Database=test;Data Source=154.8.192.215,5566;User Id=root;Password=york123;pooling=true;
+            //            CharSet=utf8;port=3306;Allow User Variables=True;");
+            //    });
             return services;
         }
     }
