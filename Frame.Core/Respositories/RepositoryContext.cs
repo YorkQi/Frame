@@ -5,7 +5,7 @@ namespace Frame.Core
 {
     public class RepositoryContext
     {
-        public readonly IServiceProvider _service;
+        //public readonly IServiceProvider _service;
         //public Repository(IServiceProvider service)
         //{
         //    _service = service;

@@ -5,7 +5,7 @@ namespace Frame.Mysql.CommandExtension
 {
     public class Field
     {
-        public Field(string name, object value = null)
+        public Field(string name, object value)
         {
             if (string.IsNullOrEmpty(name))
             {

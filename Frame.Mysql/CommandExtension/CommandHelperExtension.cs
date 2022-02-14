@@ -92,14 +92,7 @@ namespace Frame.Mysql.CommandExtension
                     param.Add($"{fFullText.Field}_{index}", string.Join(' ', wordStrs));
                 }
             }
-            if (!string.IsNullOrEmpty(filterStr))
-            {
-                return new SqlCommand(filterStr, param);
-            }
-            else
-            {
-                return null;
-            }
+            return new SqlCommand(filterStr, param);
         }
     }
 }

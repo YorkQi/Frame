@@ -16,19 +16,20 @@ namespace Tests.Controllers
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        private readonly ILogger<WeatherForecastController> _logger;
+        //private readonly ILogger<WeatherForecastController> _logger;
 
         private readonly Test1 _test;
         private readonly Test _test1;
 
         //private readonly MysqlRepository _repository;
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, 
+        public WeatherForecastController(
+            //ILogger<WeatherForecastController> logger, 
             Test1 test, 
             Test test1
             //MysqlRepository repository
             )
         {
-            _logger = logger;
+            //_logger = logger;
             _test = test;
             _test1 = test1;
             //_repository = repository;

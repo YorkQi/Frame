@@ -4,7 +4,7 @@ namespace Frame.Mysql.CommandExtension
 {
     public class SqlCommand
     {
-        public SqlCommand(string strSql, DynamicParameters param = null)
+        public SqlCommand(string strSql, DynamicParameters param)
         {
             SqlString = strSql;
             Parameters = param;
