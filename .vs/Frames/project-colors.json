@@ -140,7 +140,12 @@
       "ProjectGuid": "c2e4da52-8b9c-4684-84a5-e86f0ada8adc",
       "DisplayName": "Domain",
       "ColorIndex": 10
+    },
+    "3080f616-4bd1-4fe8-ae36-a5702b9107a7": {
+      "ProjectGuid": "3080f616-4bd1-4fe8-ae36-a5702b9107a7",
+      "DisplayName": "Frame.Core",
+      "ColorIndex": 11
     }
   },
-  "NextColorIndex": 11
+  "NextColorIndex": 12
 }

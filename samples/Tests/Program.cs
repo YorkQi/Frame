@@ -17,6 +17,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//builder.Services.AddGrpc();
+
 //×Ô¶¯×¢Èë
 builder.Services.AutoServiceCollection<WebModule>()
     .AutoModuleServiceCollection<TestModule>()
