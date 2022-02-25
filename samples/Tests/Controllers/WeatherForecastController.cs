@@ -1,9 +1,7 @@
 using Application;
 using Frame.AspNetCore.Exceptions;
 //using Frame.Mysql;
-using Frame.Repository;
 using Microsoft.AspNetCore.Mvc;
-using Repository;
 
 namespace Tests.Controllers
 {
@@ -24,7 +22,7 @@ namespace Tests.Controllers
         //private readonly MysqlRepository _repository;
         public WeatherForecastController(
             //ILogger<WeatherForecastController> logger, 
-            Test1 test, 
+            Test1 test,
             Test test1
             //MysqlRepository repository
             )

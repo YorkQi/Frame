@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 namespace Frame.Scheduler
 {
 
-    public class Scheduler : IScheduler,IJob
+    public class Scheduler : IScheduler, IJob
     {
         public IScheduler _scheduler { get; private set; }
 

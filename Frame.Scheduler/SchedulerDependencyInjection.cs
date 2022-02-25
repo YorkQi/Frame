@@ -1,6 +1,4 @@
 ﻿using Frame.Scheduler;
-using Quartz;
-using Quartz.Impl;
 using System.Threading.Tasks;
 
 namespace Microsoft.Extensions.DependencyInjection
@@ -9,7 +7,7 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         public static async Task<IServiceCollection> AddScheduler(this IServiceCollection services)
         {
-            services.AddSingleton<ISchedulerBuilder, Frame.Scheduler.SchedulerBuilder>();
+            services.AddSingleton<ISchedulerBuilder, SchedulerBuilder>();
 
             return services;
         }

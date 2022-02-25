@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Factory
+﻿namespace Factory
 {
     public class Class1
     {

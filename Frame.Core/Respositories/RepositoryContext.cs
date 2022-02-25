@@ -1,7 +1,4 @@
-﻿
-using System;
-
-namespace Frame.Core
+﻿namespace Frame.Core
 {
     public class RepositoryContext
     {

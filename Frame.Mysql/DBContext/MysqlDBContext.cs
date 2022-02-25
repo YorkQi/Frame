@@ -1,7 +1,4 @@
-﻿using Frame.Mysql.Operations;
-using System.Data;
-
-namespace Frame.Mysql
+﻿namespace Frame.Mysql
 {
     public abstract partial class MysqlDBContext//: IMysqlDBContext
     {
