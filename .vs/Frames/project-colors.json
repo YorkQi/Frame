@@ -145,7 +145,17 @@
       "ProjectGuid": "3080f616-4bd1-4fe8-ae36-a5702b9107a7",
       "DisplayName": "Frame.Core",
       "ColorIndex": 11
+    },
+    "ea6d3a26-7d87-4f51-9fa7-42c22f65a231": {
+      "ProjectGuid": "ea6d3a26-7d87-4f51-9fa7-42c22f65a231",
+      "DisplayName": "Frame.Grpc",
+      "ColorIndex": 12
+    },
+    "1a1e58c1-c25a-45ab-a0de-52be009ae8a5": {
+      "ProjectGuid": "1a1e58c1-c25a-45ab-a0de-52be009ae8a5",
+      "DisplayName": "Web",
+      "ColorIndex": 13
     }
   },
-  "NextColorIndex": 12
+  "NextColorIndex": 14
 }
