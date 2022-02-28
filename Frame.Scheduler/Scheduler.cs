@@ -1,4 +1,5 @@
 ﻿using Quartz;
+using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 
 namespace Frame.Scheduler
