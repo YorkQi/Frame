@@ -180,7 +180,12 @@
       "ProjectGuid": "d8ddc2a9-ef7e-43bf-809f-387500a250ef",
       "DisplayName": "Frame.Logging",
       "ColorIndex": 2
+    },
+    "677f4fbc-9973-4049-be5c-beed0b506b0d": {
+      "ProjectGuid": "677f4fbc-9973-4049-be5c-beed0b506b0d",
+      "DisplayName": "Job",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }
