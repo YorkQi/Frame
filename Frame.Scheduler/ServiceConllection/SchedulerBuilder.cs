@@ -45,7 +45,7 @@ namespace Frame.Scheduler
                     .RepeatForever())
                 .Build();
 
-            Jobs.Add($"{schedulerName}-{schedulerGroupName}", SchedulerState.Starting);
+            Jobs.Add($"{schedulerName}-{schedulerGroupName}", SchedulerStateEnum.Starting);
             await _scheduler.ScheduleJob(job, trigger);
         }
 
@@ -63,7 +63,7 @@ namespace Frame.Scheduler
                 var (jobDetail, trigger) = await GetScheduler(schedulerName, schedulerGroupName);
                 if (jobDetail != null && trigger != null)
                 {
-                    if ((SchedulerState)schedulerState == SchedulerState.Starting)
+                    if ((SchedulerStateEnum)schedulerState == SchedulerStateEnum.Starting)
                     {
                         await _scheduler.PauseJob(jobDetail.Key);
                         await _scheduler.PauseTrigger(trigger.Key);

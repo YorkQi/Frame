@@ -1,6 +1,6 @@
 ﻿namespace Frame.Scheduler
 {
-    public enum SchedulerState
+    public enum SchedulerStateEnum
     {
         /// <summary>
         /// 进行中
