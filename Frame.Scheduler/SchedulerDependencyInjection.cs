@@ -5,9 +5,10 @@ namespace Microsoft.Extensions.DependencyInjection
 {
     public static class SchedulerDependencyInjection
     {
-        public static async Task<IServiceCollection> AddScheduler(this IServiceCollection services)
+        public static IServiceCollection AddScheduler(this IServiceCollection services)
         {
             services.AddSingleton<ISchedulerBuilder, SchedulerBuilder>();
+            
 
             return services;
         }
