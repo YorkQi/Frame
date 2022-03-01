@@ -1,5 +1,4 @@
 ﻿using Frame.Scheduler;
-using System.Threading.Tasks;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
@@ -8,8 +7,6 @@ namespace Microsoft.Extensions.DependencyInjection
         public static IServiceCollection AddScheduler(this IServiceCollection services)
         {
             services.AddSingleton<ISchedulerBuilder, SchedulerBuilder>();
-            
-
             return services;
         }
     }
