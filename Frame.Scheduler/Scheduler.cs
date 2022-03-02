@@ -1,5 +1,4 @@
 ﻿using Quartz;
-using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 
 namespace Frame.Scheduler
@@ -9,7 +8,7 @@ namespace Frame.Scheduler
     {
         public IScheduler _scheduler { get; private set; }
 
-        public void InjectScheduler(IScheduler scheduler)
+        public void InitializeScheduler(IScheduler scheduler)
         {
             _scheduler = scheduler;
         }

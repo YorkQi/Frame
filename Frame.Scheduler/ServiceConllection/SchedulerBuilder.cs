@@ -7,13 +7,12 @@ namespace Frame.Scheduler
     public class SchedulerBuilder : ISchedulerBuilder
     {
         public Quartz.IScheduler _scheduler { get; set; }
-
-        public JobDataMap Jobs { get; private set; } = new JobDataMap();
-
-        public void Initialize(Quartz.IScheduler scheduler)
+        public SchedulerBuilder(Quartz.IScheduler scheduler)
         {
             _scheduler = scheduler;
         }
+        
+        public JobDataMap Jobs { get; private set; } = new JobDataMap();
 
         public async Task Start()
         {
@@ -106,7 +105,6 @@ namespace Frame.Scheduler
                 throw new Exception($"未查询的到{schedulerName}计划,无法删除");
             }
         }
-
 
         private async Task<(IJobDetail?, ITrigger?)> GetScheduler(string schedulerName, string schedulerGroupName)
         {

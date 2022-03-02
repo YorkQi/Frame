@@ -6,8 +6,6 @@ namespace Frame.Scheduler
     {
         Quartz.IScheduler _scheduler { get; set; }
 
-        void Initialize(Quartz.IScheduler scheduler);
-
         Task Start();
 
         Task End();

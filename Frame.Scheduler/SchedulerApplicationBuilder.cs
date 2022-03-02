@@ -22,7 +22,9 @@ namespace Microsoft.AspNetCore.Builder
 
             var schedulerBuilder = app.ApplicationServices.GetService<ISchedulerBuilder>()
                 ?? throw new System.ApplicationException("未取得ISchedulerBuilder");
-            schedulerBuilder.Initialize(scheduler);
+
+            //schedulerBuilder.Initialize(scheduler);
+
             foreach (var item in options)
             {
                 schedulerBuilder.Add(item.SchedulerAssmbly, item.SchedulerGroupName);
