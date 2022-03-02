@@ -1,5 +1,4 @@
 ﻿using Frame.Core;
-using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
 namespace Microsoft.Extensions.DependencyInjection

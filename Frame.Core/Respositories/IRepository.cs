@@ -5,7 +5,7 @@
 
     }
 
-    public interface IRepository<TEntityPrimary, TEntity>: IRepository
+    public interface IRepository<TEntityPrimary, TEntity> : IRepository
        where TEntity : IEntity
     {
 

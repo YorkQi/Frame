@@ -140,7 +140,52 @@
       "ProjectGuid": "c2e4da52-8b9c-4684-84a5-e86f0ada8adc",
       "DisplayName": "Domain",
       "ColorIndex": 10
+    },
+    "3080f616-4bd1-4fe8-ae36-a5702b9107a7": {
+      "ProjectGuid": "3080f616-4bd1-4fe8-ae36-a5702b9107a7",
+      "DisplayName": "Frame.Core",
+      "ColorIndex": 11
+    },
+    "ea6d3a26-7d87-4f51-9fa7-42c22f65a231": {
+      "ProjectGuid": "ea6d3a26-7d87-4f51-9fa7-42c22f65a231",
+      "DisplayName": "Frame.Grpc",
+      "ColorIndex": 12
+    },
+    "1a1e58c1-c25a-45ab-a0de-52be009ae8a5": {
+      "ProjectGuid": "1a1e58c1-c25a-45ab-a0de-52be009ae8a5",
+      "DisplayName": "Web",
+      "ColorIndex": 13
+    },
+    "ff9c08b7-0fbb-4e19-98e1-63dd40c75b0e": {
+      "ProjectGuid": "ff9c08b7-0fbb-4e19-98e1-63dd40c75b0e",
+      "DisplayName": "Frame.Log",
+      "ColorIndex": 14
+    },
+    "076614eb-62ff-4471-8d84-916b7cd25696": {
+      "ProjectGuid": "076614eb-62ff-4471-8d84-916b7cd25696",
+      "DisplayName": "Frame.Log",
+      "ColorIndex": 15
+    },
+    "4f002303-901c-49a2-b5ed-9aa6b7588b6a": {
+      "ProjectGuid": "4f002303-901c-49a2-b5ed-9aa6b7588b6a",
+      "DisplayName": "Frame.Log",
+      "ColorIndex": 0
+    },
+    "db844fff-148f-4ebd-a7c3-850fc58c84e7": {
+      "ProjectGuid": "db844fff-148f-4ebd-a7c3-850fc58c84e7",
+      "DisplayName": "Frame.Log",
+      "ColorIndex": 1
+    },
+    "d8ddc2a9-ef7e-43bf-809f-387500a250ef": {
+      "ProjectGuid": "d8ddc2a9-ef7e-43bf-809f-387500a250ef",
+      "DisplayName": "Frame.Logging",
+      "ColorIndex": 2
+    },
+    "677f4fbc-9973-4049-be5c-beed0b506b0d": {
+      "ProjectGuid": "677f4fbc-9973-4049-be5c-beed0b506b0d",
+      "DisplayName": "Job",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 11
+  "NextColorIndex": 4
 }

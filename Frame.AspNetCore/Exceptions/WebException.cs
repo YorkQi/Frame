@@ -2,31 +2,31 @@
 
 namespace Frame.AspNetCore.Exceptions
 {
-    public class WebException:Exception
+    public class WebException : Exception
     {
         public int? Code { get; set; }
         public int? StateCode { get; set; }
 
         public WebException()
-            :base()
+            : base()
         {
             StateCode = StatusCodes.Status400BadRequest;
         }
 
         public WebException(string? message)
-            :base(message)
-        {
-            StateCode = StatusCodes.Status400BadRequest;
-        }
-
-        public WebException(int? code,string? message)
             : base(message)
         {
-            Code = code; 
             StateCode = StatusCodes.Status400BadRequest;
         }
 
-        public WebException(int? code,int? statusCode, string? message)
+        public WebException(int? code, string? message)
+            : base(message)
+        {
+            Code = code;
+            StateCode = StatusCodes.Status400BadRequest;
+        }
+
+        public WebException(int? code, int? statusCode, string? message)
             : base(message)
         {
             Code = code;
@@ -34,12 +34,12 @@ namespace Frame.AspNetCore.Exceptions
         }
 
         public WebException(string? message, Exception? exception)
-            :base(message,exception)
+            : base(message, exception)
         {
             StateCode = StatusCodes.Status400BadRequest;
         }
 
-        public WebException(int? code,string? message, Exception? exception)
+        public WebException(int? code, string? message, Exception? exception)
            : base(message, exception)
         {
             Code = code;

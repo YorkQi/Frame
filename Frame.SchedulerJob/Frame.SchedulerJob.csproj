@@ -6,16 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="e2xxhovn.4h5~" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
     <PackageReference Include="Quartz.AspNetCore" Version="3.3.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Frame.Repository\Frame.Repository.csproj" />
   </ItemGroup>
 
 </Project>

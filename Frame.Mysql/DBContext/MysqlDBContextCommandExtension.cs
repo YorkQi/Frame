@@ -1,10 +1,4 @@
-﻿using Frame.Core;
-using Frame.Mysql.CommandExtension;
-using Frame.Mysql.CommandExtension.Filters;
-using System;
-using System.Reflection;
-
-namespace Frame.Mysql.DBContext
+﻿namespace Frame.Mysql.DBContext
 {
     public static class MysqlDBContextCommandHelper
     {

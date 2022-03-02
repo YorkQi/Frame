@@ -3,8 +3,8 @@ using Frame.Core;
 
 namespace Repository
 {
-    public class UserRepository:
-        IRepository<int,User>,
+    public class UserRepository :
+        IRepository<int, User>,
         IScopedInstance
     {
 
