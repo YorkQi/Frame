@@ -2,12 +2,12 @@
 using System;
 using System.Threading.Tasks;
 
-namespace Frame.Scheduler
+namespace Frame.SchedulerJob
 {
-    public class SchedulerBuilder : ISchedulerBuilder
+    public class QuartzSchedulerJobBuilder : ISchedulerJobBuilder
     {
         public Quartz.IScheduler _scheduler { get; set; }
-        public SchedulerBuilder(Quartz.IScheduler scheduler)
+        public QuartzSchedulerJobBuilder(Quartz.IScheduler scheduler)
         {
             _scheduler = scheduler;
         }
@@ -32,7 +32,7 @@ namespace Frame.Scheduler
         /// <returns></returns>
         public async Task Add(string schedulerName, string schedulerGroupName)
         {
-            IJobDetail job = JobBuilder.Create<Scheduler>()
+            IJobDetail job = JobBuilder.Create<QuartzSchedulerJob>()
                 .WithIdentity(schedulerName, schedulerGroupName)
                 .Build();
 

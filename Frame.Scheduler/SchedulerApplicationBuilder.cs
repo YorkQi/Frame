@@ -20,10 +20,14 @@ namespace Microsoft.AspNetCore.Builder
             StdSchedulerFactory factory = new StdSchedulerFactory();
             var scheduler = factory.GetScheduler().GetAwaiter().GetResult();
 
-            var schedulerBuilder = app.ApplicationServices.GetService<ISchedulerBuilder>()
+            var schedulerQuartz = app.ApplicationServices.GetService<QuartzSchedulerJob>()
+               ?? throw new System.ApplicationException("IScheduler");
+
+
+            var schedulerBuilder = app.ApplicationServices.GetService<IQuartzBuilder>()
                 ?? throw new System.ApplicationException("未取得ISchedulerBuilder");
 
-            //schedulerBuilder.Initialize(scheduler);
+            schedulerQuartz.InitializeScheduler(scheduler);
 
             foreach (var item in options)
             {

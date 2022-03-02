@@ -6,7 +6,8 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         public static IServiceCollection AddScheduler(this IServiceCollection services)
         {
-            services.AddSingleton<ISchedulerBuilder, SchedulerBuilder>();
+            services.AddSingleton<ISchedulerJob, QuartzSchedulerJob>();
+            services.AddSingleton<IQuartzBuilder, QuartzBuilder>();
             return services;
         }
     }

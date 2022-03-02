@@ -2,7 +2,7 @@
 
 namespace Frame.Scheduler
 {
-    public interface ISchedulerBuilder
+    public interface IQuartzBuilder
     {
         Quartz.IScheduler _scheduler { get; set; }
 

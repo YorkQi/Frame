@@ -16,7 +16,7 @@ foreach (Type type in types)
     if (type.IsPublic || type.IsClass || type.IsAbstract)
     {
         var imps = type.GetInterfaces();
-        if (imps.Any(t => t.Equals(typeof(IScheduler))))
+        if (imps.Any(t => t.Equals(typeof(ISchedulerJob))))
         {
             options.Add(new SchedulerOption() { SchedulerAssmbly = type.Name, SchedulerName = type.Name, SchedulerGroupName = "DEFULT" });
         }
