@@ -1,6 +1,5 @@
 ﻿using Frame.Scheduler;
 using Frame.SchedulerJob;
-using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Quartz.Impl;
 using System.Collections.Generic;
@@ -33,7 +32,7 @@ namespace Microsoft.AspNetCore.Builder
 
             foreach (var item in options)
             {
-               // schedulerBuilder.Add(item.SchedulerAssmbly, item.SchedulerGroupName);
+                // schedulerBuilder.Add(item.SchedulerAssmbly, item.SchedulerGroupName);
             }
             schedulerBuilder.Start().GetAwaiter();
             return app;

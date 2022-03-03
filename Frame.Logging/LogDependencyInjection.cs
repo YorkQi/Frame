@@ -9,7 +9,7 @@ namespace Microsoft.Extensions.DependencyInjection
             switch (option.frame)
             {
                 case LogFrameEnums.Nlog:
-                    services.AddTransient<ILog,Nlog>(); 
+                    services.AddTransient<ILog, Nlog>();
                     break;
                 default:
                     services.AddTransient<ILog, Nlog>();

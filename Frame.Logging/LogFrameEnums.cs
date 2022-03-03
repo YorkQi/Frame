@@ -2,6 +2,6 @@
 {
     public enum LogFrameEnums
     {
-        Nlog=1,
+        Nlog = 1,
     }
 }

@@ -12,7 +12,7 @@ namespace Frame.SchedulerJob
         {
             _scheduler = scheduler;
         }
-        
+
         public JobDataMap Jobs { get; private set; } = new JobDataMap();
 
         public async Task Start()
