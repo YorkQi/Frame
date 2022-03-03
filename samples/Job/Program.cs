@@ -1,4 +1,5 @@
 using Frame.Scheduler;
+using Frame.SchedulerJob;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,6 +23,6 @@ foreach (Type type in types)
         }
     }
 }
-app.AddScheduler(options).SchedulerStart();
+//app.AddScheduler(options).SchedulerStart();
 
 app.Run();

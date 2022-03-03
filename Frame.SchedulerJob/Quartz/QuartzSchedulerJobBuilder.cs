@@ -6,8 +6,9 @@ namespace Frame.SchedulerJob
 {
     public class QuartzSchedulerJobBuilder : ISchedulerJobBuilder
     {
-        public Quartz.IScheduler _scheduler { get; set; }
-        public QuartzSchedulerJobBuilder(Quartz.IScheduler scheduler)
+        private const string SchedulerGroupName = "DEFULT";
+        public IScheduler _scheduler { get; set; }
+        public QuartzSchedulerJobBuilder(IScheduler scheduler)
         {
             _scheduler = scheduler;
         }
@@ -30,21 +31,21 @@ namespace Frame.SchedulerJob
         /// <param name="schedulerName">调度器【唯一】</param>
         /// <param name="schedulerGroupName">调度器组别</param>
         /// <returns></returns>
-        public async Task Add(string schedulerName, string schedulerGroupName)
+        public async Task Add(string schedulerName)
         {
             IJobDetail job = JobBuilder.Create<QuartzSchedulerJob>()
-                .WithIdentity(schedulerName, schedulerGroupName)
+                .WithIdentity(schedulerName, SchedulerGroupName)
                 .Build();
 
             ITrigger trigger = TriggerBuilder.Create()
-                .WithIdentity($"{schedulerName}.trigger", schedulerGroupName)
+                .WithIdentity($"{schedulerName}.trigger", SchedulerGroupName)
                 .StartNow()
                 .WithSimpleSchedule(x => x
                     .WithIntervalInSeconds(10)
                     .RepeatForever())
                 .Build();
 
-            Jobs.Add($"{schedulerName}-{schedulerGroupName}", SchedulerStateEnum.Starting);
+            Jobs.Add($"{schedulerName}-{SchedulerGroupName}", SchedulerJobStateEnum.Starting);
             await _scheduler.ScheduleJob(job, trigger);
         }
 
@@ -54,15 +55,15 @@ namespace Frame.SchedulerJob
         /// <param name="schedulerName"></param>
         /// <param name="schedulerGroupName"></param>
         /// <returns></returns>
-        public async Task ResumeOrPause(string schedulerName, string schedulerGroupName)
+        public async Task ResumeOrPause(string schedulerName)
         {
-            var schedulerState = Jobs.Get($"{schedulerName}-{schedulerGroupName}");
+            var schedulerState = Jobs.Get($"{schedulerName}-{SchedulerGroupName}");
             if (schedulerState != null)
             {
-                var (jobDetail, trigger) = await GetScheduler(schedulerName, schedulerGroupName);
+                var (jobDetail, trigger) = await GetScheduler(schedulerName, SchedulerGroupName);
                 if (jobDetail != null && trigger != null)
                 {
-                    if ((SchedulerStateEnum)schedulerState == SchedulerStateEnum.Starting)
+                    if ((SchedulerJobStateEnum)schedulerState == SchedulerJobStateEnum.Starting)
                     {
                         await _scheduler.PauseJob(jobDetail.Key);
                         await _scheduler.PauseTrigger(trigger.Key);
@@ -85,12 +86,12 @@ namespace Frame.SchedulerJob
         }
 
 
-        public async Task Remove(string schedulerName, string schedulerGroupName)
+        public async Task Remove(string schedulerName)
         {
-            var schedulerState = Jobs.Get($"{schedulerName}-{schedulerGroupName}");
+            var schedulerState = Jobs.Get($"{schedulerName}-{SchedulerGroupName}");
             if (schedulerState != null)
             {
-                var (jobDetail, trigger) = await GetScheduler(schedulerName, schedulerGroupName);
+                var (jobDetail, trigger) = await GetScheduler(schedulerName, SchedulerGroupName);
                 if (jobDetail != null && trigger != null)
                 {
                     await _scheduler.DeleteJob(jobDetail.Key);

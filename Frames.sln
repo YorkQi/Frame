@@ -22,8 +22,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "samples\Service\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "samples\Tests\Tests.csproj", "{4B81C1E0-3C9B-4E59-8A7C-35095D71E162}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Frame.Scheduler", "Frame.Scheduler\Frame.Scheduler.csproj", "{5E666565-B00F-48D4-9750-2195AF001498}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "samples\Domain\Domain.csproj", "{C2E4DA52-8B9C-4684-84A5-E86F0ADA8ADC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Frame.Repository", "Frame.Repository\Frame.Repository.csproj", "{DD7A913C-9FF6-4343-B8F4-5687C3073581}"
@@ -40,7 +38,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Job", "samples\Job\Job.cspr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scheduler", "Scheduler", "{4E101417-5594-40DD-B18A-58DC503462D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frame.SchedulerJob", "Frame.SchedulerJob\Frame.SchedulerJob.csproj", "{E5E888CE-72FB-47D1-BA56-9A99C698FE75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Frame.SchedulerJob", "Frame.SchedulerJob\Frame.SchedulerJob.csproj", "{E5E888CE-72FB-47D1-BA56-9A99C698FE75}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -76,10 +74,6 @@ Global
 		{4B81C1E0-3C9B-4E59-8A7C-35095D71E162}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B81C1E0-3C9B-4E59-8A7C-35095D71E162}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B81C1E0-3C9B-4E59-8A7C-35095D71E162}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5E666565-B00F-48D4-9750-2195AF001498}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5E666565-B00F-48D4-9750-2195AF001498}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5E666565-B00F-48D4-9750-2195AF001498}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5E666565-B00F-48D4-9750-2195AF001498}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C2E4DA52-8B9C-4684-84A5-E86F0ADA8ADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C2E4DA52-8B9C-4684-84A5-E86F0ADA8ADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2E4DA52-8B9C-4684-84A5-E86F0ADA8ADC}.Release|Any CPU.ActiveCfg = Release|Any CPU

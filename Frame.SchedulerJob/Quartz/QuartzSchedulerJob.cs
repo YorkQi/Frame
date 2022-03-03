@@ -3,9 +3,9 @@ using System.Threading.Tasks;
 
 namespace Frame.SchedulerJob
 {
-    public class QuartzSchedulerJob : ISchedulerJob
+    public class QuartzSchedulerJob : ISchedulerJob, IJob
     {
-        public ISchedulerJob SchedulerJob { get; private set; }
+        public IScheduler SchedulerJob { get; private set; }
 
         public void InitializeJob(IScheduler schedulerJob)
         {
@@ -14,7 +14,7 @@ namespace Frame.SchedulerJob
 
         public async Task Execute(IJobExecutionContext context)
         {
-            await SchedulerJob.Execute(context);
+            //await SchedulerJob.Execute(context);
         }
     }
 }
