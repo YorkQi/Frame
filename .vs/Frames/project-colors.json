@@ -185,7 +185,12 @@
       "ProjectGuid": "677f4fbc-9973-4049-be5c-beed0b506b0d",
       "DisplayName": "Job",
       "ColorIndex": 3
+    },
+    "e5e888ce-72fb-47d1-ba56-9a99c698fe75": {
+      "ProjectGuid": "e5e888ce-72fb-47d1-ba56-9a99c698fe75",
+      "DisplayName": "Frame.SchedulerJob",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }
