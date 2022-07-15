@@ -190,7 +190,37 @@
       "ProjectGuid": "e5e888ce-72fb-47d1-ba56-9a99c698fe75",
       "DisplayName": "Frame.SchedulerJob",
       "ColorIndex": 4
+    },
+    "4e101417-5594-40dd-b18a-58dc503462d3": {
+      "ProjectGuid": "4e101417-5594-40dd-b18a-58dc503462d3",
+      "DisplayName": "Scheduler",
+      "ColorIndex": 5
+    },
+    "5b83cd38-dd10-4e9f-a15e-98ba5f988b84": {
+      "ProjectGuid": "5b83cd38-dd10-4e9f-a15e-98ba5f988b84",
+      "DisplayName": "AspCore",
+      "ColorIndex": 6
+    },
+    "18efd446-2be9-466d-b07c-cbd751ebe2f2": {
+      "ProjectGuid": "18efd446-2be9-466d-b07c-cbd751ebe2f2",
+      "DisplayName": "Repository",
+      "ColorIndex": 7
+    },
+    "5951e2b2-6453-497b-b1ee-74de15844b3f": {
+      "ProjectGuid": "5951e2b2-6453-497b-b1ee-74de15844b3f",
+      "DisplayName": "Domain",
+      "ColorIndex": 8
+    },
+    "6021257b-a6e5-432c-91a5-8023364b1337": {
+      "ProjectGuid": "6021257b-a6e5-432c-91a5-8023364b1337",
+      "DisplayName": "Application",
+      "ColorIndex": 9
+    },
+    "ef66c7da-9b08-4df9-8704-27b764157749": {
+      "ProjectGuid": "ef66c7da-9b08-4df9-8704-27b764157749",
+      "DisplayName": "Tests",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 11
 }

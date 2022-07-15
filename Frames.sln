@@ -45,7 +45,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "samples\Webs\Tests
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web", "samples\Webs\Web\Web.csproj", "{03F8809B-EF42-455A-9E34-318471A66EAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspCore", "samples\Study\AspCore\AspCore.csproj", "{5B83CD38-DD10-4E9F-A15E-98BA5F988B84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspCore", "samples\Study\AspCore\AspCore.csproj", "{5B83CD38-DD10-4E9F-A15E-98BA5F988B84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frame.Service", "Frame.Service\Frame.Service.csproj", "{A2C7D29B-F570-4C2F-99EA-AEC43185CEB0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -113,6 +115,10 @@ Global
 		{5B83CD38-DD10-4E9F-A15E-98BA5F988B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B83CD38-DD10-4E9F-A15E-98BA5F988B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B83CD38-DD10-4E9F-A15E-98BA5F988B84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2C7D29B-F570-4C2F-99EA-AEC43185CEB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2C7D29B-F570-4C2F-99EA-AEC43185CEB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2C7D29B-F570-4C2F-99EA-AEC43185CEB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2C7D29B-F570-4C2F-99EA-AEC43185CEB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
